@@ -1,6 +1,7 @@
 "use client";
 import { useState, useMemo } from "react";
 import clsx from "clsx";
+import { ChevronUp, ChevronDown } from "lucide-react";
 
 interface Column<T> {
   key: keyof T;
@@ -82,7 +83,9 @@ export default function SortableTable<T extends Record<string, unknown>>({
                   <span className="inline-flex items-center gap-1">
                     {col.label}
                     {sortKey === col.key && (
-                      <span className="text-indigo-400">{sortDir === "asc" ? "↑" : "↓"}</span>
+                      <span className="text-indigo-400">
+                        {sortDir === "asc" ? <ChevronUp className="w-3.5 h-3.5 inline" /> : <ChevronDown className="w-3.5 h-3.5 inline" />}
+                      </span>
                     )}
                   </span>
                 </th>

@@ -1,4 +1,5 @@
 import { getProductMetrics, getParetoMetrics, fmt, fmtPct } from "@/lib/data";
+import { AlertTriangle } from "lucide-react";
 
 export default function ProductsPage() {
   const products = getProductMetrics();
@@ -16,7 +17,9 @@ export default function ProductsPage() {
 
       {/* Pareto Summary Alert Card */}
       <div className="card border border-rose-500/30 bg-rose-500/5">
-        <h3 className="text-sm font-semibold text-rose-400 mb-1">🚨 Pareto Risk: High Product Concentration</h3>
+        <h3 className="text-sm font-semibold text-rose-400 mb-1 flex items-center gap-1.5">
+          <AlertTriangle className="w-4 h-4 text-rose-400" /> Pareto Risk: High Product Concentration
+        </h3>
         <p className="text-xs text-slate-300 leading-relaxed">
           The top <strong className="text-white font-mono">5% of products</strong> generate <strong className="text-emerald-400 font-mono">72.1% of total platform revenue</strong>.
           The top <strong className="text-white font-mono">20% of products</strong> account for <strong className="text-emerald-400 font-mono">91.4% of GMV</strong>.

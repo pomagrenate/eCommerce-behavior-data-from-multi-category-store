@@ -1,4 +1,5 @@
 import { getCrossSellMetrics, fmt } from "@/lib/data";
+import { Lightbulb } from "lucide-react";
 
 export default function CrossSellPage() {
   const crossSell = getCrossSellMetrics();
@@ -15,7 +16,9 @@ export default function CrossSellPage() {
 
       {/* Strategic Recommendation Alert */}
       <div className="card border border-indigo-500/30 bg-indigo-500/5">
-        <h3 className="text-sm font-semibold text-indigo-300 mb-1">💡 Strategic Merchandising Opportunity</h3>
+        <h3 className="text-sm font-semibold text-indigo-300 mb-1 flex items-center gap-1.5">
+          <Lightbulb className="w-4 h-4 text-indigo-300" /> Strategic Merchandising Opportunity
+        </h3>
         <p className="text-xs text-slate-300 leading-relaxed">
           {crossSell?.recommendation || "Fewer than 5% of smartphone buyers currently add accessories in the same session. Prompting 1-click bundles at cart addition represents a $1.2M+ high-margin revenue opportunity."}
         </p>

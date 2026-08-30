@@ -1,18 +1,1 @@
-{
-  "cohort_data": [
-    {"cohort_month":"2019-10-01","active_month":"2019-10-01","active_users":2800000,"purchasing_users":620000,"period_offset":0},
-    {"cohort_month":"2019-10-01","active_month":"2019-11-01","active_users":1260000,"purchasing_users":290000,"period_offset":1},
-    {"cohort_month":"2019-11-01","active_month":"2019-11-01","active_users":2100000,"purchasing_users":480000,"period_offset":0}
-  ],
-  "repeat_purchase_distribution": [
-    {"purchase_count":1,"users":520000,"pct":68.4},
-    {"purchase_count":2,"users":140000,"pct":18.4},
-    {"purchase_count":3,"users":52000,"pct":6.8},
-    {"purchase_count":4,"users":22000,"pct":2.9},
-    {"purchase_count":5,"users":12000,"pct":1.6},
-    {"purchase_count":6,"users":6000,"pct":0.79},
-    {"purchase_count":7,"users":3200,"pct":0.42},
-    {"purchase_count":8,"users":1800,"pct":0.24}
-  ],
-  "limitation_note": "Dataset covers only Oct-Nov 2019. Cohort analysis shows 2 months only."
-}
+{"cohort_data":[{"cohort_month":"2019-10-01","active_month":"2019-10-01","active_users":3022290,"purchasing_users":498515,"period_offset":0},{"cohort_month":"2019-10-01","active_month":"2019-11-01","active_users":1401758,"purchasing_users":365207,"period_offset":1},{"cohort_month":"2019-11-01","active_month":"2019-11-01","active_users":2294359,"purchasing_users":198955,"period_offset":0}],"repeat_purchase_distribution":[{"purchase_count":1,"users":402145,"pct":57.6577},{"purchase_count":2,"users":138677,"pct":19.8829},{"purchase_count":3,"users":59424,"pct":8.5199},{"purchase_count":4,"users":30772,"pct":4.4119},{"purchase_count":5,"users":17847,"pct":2.5588},{"purchase_count":6,"users":11392,"pct":1.6333},{"purchase_count":7,"users":7805,"pct":1.119},{"purchase_count":8,"users":5521,"pct":0.7916},{"purchase_count":9,"users":4015,"pct":0.5757},{"purchase_count":10,"users":3095,"pct":0.4437},{"purchase_count":11,"users":2324,"pct":0.3332},{"purchase_count":12,"users":1915,"pct":0.2746},{"purchase_count":13,"users":1614,"pct":0.2314},{"purchase_count":14,"users":1304,"pct":0.187},{"purchase_count":15,"users":1106,"pct":0.1586},{"purchase_count":16,"users":912,"pct":0.1308},{"purchase_count":17,"users":762,"pct":0.1093},{"purchase_count":18,"users":696,"pct":0.0998},{"purchase_count":19,"users":573,"pct":0.0822},{"purchase_count":20,"users":501,"pct":0.0718}],"limitation_note":"Dataset covers Oct-Nov 2019."}

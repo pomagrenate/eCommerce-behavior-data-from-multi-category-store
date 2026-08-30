@@ -1,4 +1,5 @@
 import clsx from "clsx";
+import { TrendingUp, TrendingDown } from "lucide-react";
 
 interface Props {
   label: string;
@@ -25,8 +26,9 @@ export default function KPICard({ label, value, sub, accent = "indigo", trend }:
       <div className="text-2xl font-bold metric-value text-slate-100">{value}</div>
       {sub && <div className="text-xs text-slate-500">{sub}</div>}
       {trend !== undefined && (
-        <div className={clsx("text-xs font-medium mt-1", trend >= 0 ? "text-emerald-400" : "text-rose-400")}>
-          {trend >= 0 ? "↑" : "↓"} {Math.abs(trend).toFixed(2)}%
+        <div className={clsx("text-xs font-medium mt-1 flex items-center gap-1", trend >= 0 ? "text-emerald-400" : "text-rose-400")}>
+          {trend >= 0 ? <TrendingUp className="w-3.5 h-3.5" /> : <TrendingDown className="w-3.5 h-3.5" />}
+          <span>{Math.abs(trend).toFixed(2)}%</span>
         </div>
       )}
     </div>

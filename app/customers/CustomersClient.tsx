@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from "react";
 import clsx from "clsx";
+import { Search, Scale } from "lucide-react";
 import type { DataDerivedPersona, PersonaJourneyItem } from "@/lib/types";
 
 interface Props {
@@ -50,12 +51,22 @@ export default function CustomersClient({ personas, journeys }: Props) {
       <div className="flex items-center gap-3">
         {(["explore", "compare"] as const).map(v => (
           <button key={v} onClick={() => setView(v)}
-            className={clsx("px-4 py-2 rounded-lg text-sm font-semibold capitalize transition-all",
+            className={clsx("px-4 py-2 rounded-lg text-sm font-semibold transition-all flex items-center gap-2",
               view === v
                 ? "bg-indigo-600 text-white shadow-lg shadow-indigo-600/30"
                 : "bg-[#0d1526] text-slate-400 border border-[#1e2d4a] hover:text-slate-200"
             )}>
-            {v === "explore" ? "🔍 Persona Explorer" : "⚖️ Persona Comparison"}
+            {v === "explore" ? (
+              <>
+                <Search className="w-4 h-4" />
+                <span>Persona Explorer</span>
+              </>
+            ) : (
+              <>
+                <Scale className="w-4 h-4" />
+                <span>Persona Comparison</span>
+              </>
+            )}
           </button>
         ))}
       </div>

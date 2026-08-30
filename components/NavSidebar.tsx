@@ -2,41 +2,54 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import clsx from "clsx";
-
+import {
+  LayoutDashboard,
+  SlidersHorizontal,
+  Zap,
+  FlaskConical,
+  Filter,
+  GitCommitHorizontal,
+  Users,
+  Tag,
+  Award,
+  Grid,
+  Package,
+  Link2,
+  BookOpen
+} from "lucide-react";
 
 const NAV_GROUPS = [
   {
     title: "Executive",
     items: [
-      { href: "/",             label: "CEO Dashboard", icon: "⬡" },
-      { href: "/simulator",    label: "CEO Simulator", icon: "🕹️" },
-      { href: "/opportunities",label: "Opportunities", icon: "⚡" },
-      { href: "/experiments",  label: "Experiments",   icon: "🧪" },
+      { href: "/",             label: "CEO Dashboard", icon: LayoutDashboard },
+      { href: "/simulator",    label: "CEO Simulator", icon: SlidersHorizontal },
+      { href: "/opportunities",label: "Opportunities", icon: Zap },
+      { href: "/experiments",  label: "Experiments",   icon: FlaskConical },
     ]
   },
-
   {
     title: "Behavior & Funnel",
     items: [
-      { href: "/funnel",       label: "Funnel & Leakage", icon: "▽" },
-      { href: "/journey",      label: "Customer Journey", icon: "⤷" },
-      { href: "/customers",    label: "User Segments",    icon: "👥" },
-      { href: "/pricing",      label: "Price Sensitivity",icon: "🏷️" },
+      { href: "/funnel",       label: "Funnel & Leakage", icon: Filter },
+      { href: "/journey",      label: "Customer Journey", icon: GitCommitHorizontal },
+      { href: "/customers",    label: "User Segments",    icon: Users },
+      { href: "/pricing",      label: "Price Sensitivity",icon: Tag },
     ]
   },
   {
     title: "Merchandising",
     items: [
-      { href: "/brands",       label: "Brand Intelligence",icon: "◈" },
-      { href: "/categories",   label: "Categories",       icon: "⊞" },
-      { href: "/products",     label: "Products & Pareto", icon: "📦" },
-      { href: "/cross-sell",   label: "Cross-Sell Matrix",icon: "🔗" },
+      { href: "/brands",       label: "Brand Intelligence",icon: Award },
+      { href: "/categories",   label: "Categories",       icon: Grid },
+      { href: "/products",     label: "Products & Pareto", icon: Package },
+      { href: "/cross-sell",   label: "Cross-Sell Matrix",icon: Link2 },
     ]
   },
   {
     title: "System",
     items: [
-      { href: "/methodology",  label: "Methodology & Limits", icon: "∑" },
+      { href: "/methodology",  label: "Methodology & Limits", icon: BookOpen },
     ]
   }
 ];
@@ -64,7 +77,7 @@ export default function NavSidebar() {
               {group.title}
             </div>
             <div className="space-y-0.5">
-              {group.items.map(({ href, label, icon }) => {
+              {group.items.map(({ href, label, icon: Icon }) => {
                 const active = pathname === href;
                 return (
                   <Link
@@ -77,8 +90,8 @@ export default function NavSidebar() {
                         : "text-slate-400 hover:text-slate-200 hover:bg-white/5"
                     )}
                   >
-                    <span className="text-sm w-4 text-center">{icon}</span>
-                    {label}
+                    <Icon className="w-4 h-4 flex-shrink-0" />
+                    <span>{label}</span>
                   </Link>
                 );
               })}

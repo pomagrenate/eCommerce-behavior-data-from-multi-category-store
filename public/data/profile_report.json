@@ -1,0 +1,97 @@
+{
+  "total_rows": 109950743,
+  "count_time_sec": 46.02,
+  "columns": [
+    {
+      "name": "event_time",
+      "type": "TIMESTAMP WITH TIME ZONE"
+    },
+    {
+      "name": "event_type",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "product_id",
+      "type": "BIGINT"
+    },
+    {
+      "name": "category_id",
+      "type": "BIGINT"
+    },
+    {
+      "name": "category_code",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "brand",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "price",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "user_id",
+      "type": "BIGINT"
+    },
+    {
+      "name": "user_session",
+      "type": "VARCHAR"
+    }
+  ],
+  "null_counts": {
+    "event_time": 0,
+    "event_type": 0,
+    "product_id": 0,
+    "category_id": 0,
+    "category_code": 35413780,
+    "brand": 15331243,
+    "price": 0,
+    "user_id": 0,
+    "user_session": 12
+  },
+  "event_distribution": [
+    {
+      "type": "view",
+      "count": 104335509,
+      "pct": 94.893
+    },
+    {
+      "type": "cart",
+      "count": 3955446,
+      "pct": 3.5975
+    },
+    {
+      "type": "purchase",
+      "count": 1659788,
+      "pct": 1.5096
+    }
+  ],
+  "date_range": {
+    "min": "2019-10-01 00:00:00+00:00",
+    "max": "2019-11-30 23:59:59+00:00",
+    "days": 61
+  },
+  "unique_counts": {
+    "users": 5316649,
+    "sessions": 23016650,
+    "products": 206876,
+    "categories": 691,
+    "brands": 4303,
+    "category_codes": 129
+  },
+  "price_stats_purchases": {
+    "min": 0.77,
+    "max": 2574.07,
+    "avg": 304.35,
+    "median": 174.02,
+    "stddev": 344.79
+  },
+  "source_files": [
+    {
+      "name": "ecommerce-behavior-data-from-multi-category-store_oct-nov_2019.csv",
+      "path": "/kaggle/input/datasets/vanhaminhquan/ecommerce-behavior-oct-nov-2019/ecommerce-behavior-data-from-multi-category-store_oct-nov_2019.csv",
+      "size_gb": 14.77
+    }
+  ]
+}

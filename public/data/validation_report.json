@@ -1,0 +1,75 @@
+{
+  "checks": [
+    {
+      "check": "null_user_id",
+      "result": 0,
+      "status": "PASS"
+    },
+    {
+      "check": "null_product_id",
+      "result": 0,
+      "status": "PASS"
+    },
+    {
+      "check": "null_event_type",
+      "result": 0,
+      "status": "PASS"
+    },
+    {
+      "check": "null_event_time",
+      "result": 0,
+      "status": "PASS"
+    },
+    {
+      "check": "null_price",
+      "result": 0,
+      "status": "PASS"
+    },
+    {
+      "check": "null_brand",
+      "result": 15331243,
+      "status": "PASS"
+    },
+    {
+      "check": "null_category_code",
+      "result": 35413780,
+      "status": "PASS"
+    },
+    {
+      "check": "invalid_event_types",
+      "result": 0,
+      "status": "PASS"
+    },
+    {
+      "check": "negative_price",
+      "result": 0,
+      "status": "PASS"
+    },
+    {
+      "check": "zero_price_purchases",
+      "result": 0,
+      "status": "PASS"
+    },
+    {
+      "check": "extreme_price_gt_10000",
+      "result": 0,
+      "status": "PASS"
+    },
+    {
+      "check": "potential_duplicates",
+      "result": 75658,
+      "status": "PASS"
+    }
+  ],
+  "summary": {
+    "total_checks": 12,
+    "passed": 12,
+    "warnings": 0
+  },
+  "session_stats": {
+    "min_events_per_session": 1,
+    "max_events_per_session": 4128,
+    "avg_events_per_session": 4.78,
+    "median_events_per_session": 2.0
+  }
+}

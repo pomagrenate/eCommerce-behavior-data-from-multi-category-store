@@ -2,6 +2,7 @@ import { getOverview, getDailyMetrics, getHourlyMetrics, getCeoFindings, fmt, fm
 import KPICard from "@/components/dashboard/KPICard";
 import DashboardCharts from "@/components/dashboard/DashboardCharts";
 import Link from "next/link";
+import { Zap, FlaskConical } from "lucide-react";
 
 export default function DashboardPage() {
   const ov = getOverview();
@@ -25,11 +26,11 @@ export default function DashboardPage() {
           </p>
         </div>
         <div className="flex gap-2">
-          <Link href="/opportunities" className="px-4 py-2 bg-indigo-600 hover:bg-indigo-500 text-white font-semibold rounded-lg text-xs transition-all shadow-lg shadow-indigo-600/30">
-            ⚡ Executive Opportunities
+          <Link href="/opportunities" className="px-4 py-2 bg-indigo-600 hover:bg-indigo-500 text-white font-semibold rounded-lg text-xs transition-all shadow-lg shadow-indigo-600/30 flex items-center gap-1.5">
+            <Zap className="w-3.5 h-3.5 text-amber-300" /> Executive Opportunities
           </Link>
-          <Link href="/experiments" className="px-4 py-2 bg-[#131f37] hover:bg-[#1c2d4f] text-slate-200 font-semibold border border-[#1e2d4a] rounded-lg text-xs transition-all">
-            🧪 Experiment Roadmap
+          <Link href="/experiments" className="px-4 py-2 bg-[#131f37] hover:bg-[#1c2d4f] text-slate-200 font-semibold border border-[#1e2d4a] rounded-lg text-xs transition-all flex items-center gap-1.5">
+            <FlaskConical className="w-3.5 h-3.5 text-cyan-400" /> Experiment Roadmap
           </Link>
         </div>
       </div>

@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from "react";
 import clsx from "clsx";
+import { Globe, AlertTriangle } from "lucide-react";
 import type { DataDerivedPersona, MarkovMatrixMap, SimulatorBaselineData } from "@/lib/types";
 
 interface Props {
@@ -119,7 +120,7 @@ export default function SimulatorClient({ personas, markov, baselines }: Props) 
   return (
     <div className="space-y-8">
       {/* 3-Tier Framework Banner */}
-      <div className="flex flex-wrap items-center justify-between gap-4 p-4 rounded-xl border border-indigo-500/30 bg-[#0c1322]">
+      <div className="flex flex-wrap items-center justify-between gap-4 p-4 rounded-xl border border-[#1e2d4a] bg-[#0c1322]">
         <div className="flex items-center gap-3">
           <span className="w-8 h-8 rounded-lg bg-indigo-600/30 border border-indigo-500/50 text-indigo-300 font-mono font-bold text-sm flex items-center justify-center">
             T3
@@ -154,7 +155,7 @@ export default function SimulatorClient({ personas, markov, baselines }: Props) 
                   : "bg-[#090f1d] border-[#1e2d4a] text-slate-400 hover:text-slate-200"
               )}
             >
-              <span>🌐 All Customers (Platform Population)</span>
+              <span className="flex items-center gap-1.5"><Globe className="w-3.5 h-3.5 text-indigo-400" /> All Customers (Platform Population)</span>
               <span className="font-mono text-[10px] opacity-70">100%</span>
             </button>
 
@@ -361,8 +362,11 @@ export default function SimulatorClient({ personas, markov, baselines }: Props) 
       </div>
 
       {/* Mandatory Non-Causal Simulation Disclaimer */}
-      <div className="p-4 rounded-xl border border-amber-500/30 bg-amber-500/10 text-xs text-amber-200 leading-relaxed">
-        <strong>⚠️ Non-Causal Simulation Disclaimer:</strong> Scenario simulations produced by this platform represent what-if calculations based on historical behavioral transition probabilities. They are not causal forecasts, machine-learning predictions, or guaranteed business revenue guarantees.
+      <div className="p-4 rounded-xl border border-amber-500/30 bg-amber-500/10 text-xs text-amber-200 leading-relaxed flex items-start gap-2">
+        <AlertTriangle className="w-4 h-4 text-amber-400 flex-shrink-0 mt-0.5" />
+        <div>
+          <strong className="font-semibold">Non-Causal Simulation Disclaimer:</strong> Scenario simulations produced by this platform represent what-if calculations based on historical behavioral transition probabilities. They are not causal forecasts, machine-learning predictions, or guaranteed business revenue guarantees.
+        </div>
       </div>
     </div>
   );
