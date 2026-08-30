@@ -1,0 +1,7 @@
+[
+  {"product_id":"1004856","brand":"samsung","category_code":"electronics.smartphone","avg_price":576.0,"views":980000,"carts":98000,"purchases":28000,"revenue":16128000.0,"conversion_rate":2.86},
+  {"product_id":"4804056","brand":"apple","category_code":"electronics.smartphone","avg_price":891.0,"views":720000,"carts":79000,"purchases":24000,"revenue":21384000.0,"conversion_rate":3.33},
+  {"product_id":"1004767","brand":"samsung","category_code":"electronics.smartphone","avg_price":253.0,"views":680000,"carts":81000,"purchases":26000,"revenue":6578000.0,"conversion_rate":3.82},
+  {"product_id":"1005115","brand":"apple","category_code":"electronics.smartphone","avg_price":689.0,"views":540000,"carts":59000,"purchases":18000,"revenue":12402000.0,"conversion_rate":3.33},
+  {"product_id":"17300353","brand":"","category_code":"","avg_price":18.0,"views":490000,"carts":44000,"purchases":12000,"revenue":216000.0,"conversion_rate":2.45}
+]

@@ -1,0 +1,10 @@
+[
+  {"brand":"samsung","views":4200000,"carts":420000,"purchases":118000,"removes":62000,"unique_users":1800000,"revenue":62000000.0,"avg_purchase_price":525.0,"avg_price":320.0,"view_to_cart_rate":10.0,"cart_to_purchase_rate":28.1,"overall_conversion_rate":2.81},
+  {"brand":"apple","views":3100000,"carts":295000,"purchases":89000,"removes":48000,"unique_users":1380000,"revenue":71000000.0,"avg_purchase_price":798.0,"avg_price":620.0,"view_to_cart_rate":9.52,"cart_to_purchase_rate":30.17,"overall_conversion_rate":2.87},
+  {"brand":"xiaomi","views":2800000,"carts":308000,"purchases":96000,"removes":52000,"unique_users":1260000,"revenue":28000000.0,"avg_purchase_price":291.0,"avg_price":180.0,"view_to_cart_rate":11.0,"cart_to_purchase_rate":31.17,"overall_conversion_rate":3.43},
+  {"brand":"huawei","views":2200000,"carts":220000,"purchases":64000,"removes":35000,"unique_users":1000000,"revenue":32000000.0,"avg_purchase_price":500.0,"avg_price":310.0,"view_to_cart_rate":10.0,"cart_to_purchase_rate":29.09,"overall_conversion_rate":2.91},
+  {"brand":"lg","views":1900000,"carts":171000,"purchases":47000,"removes":28000,"unique_users":870000,"revenue":21000000.0,"avg_purchase_price":447.0,"avg_price":280.0,"view_to_cart_rate":9.0,"cart_to_purchase_rate":27.49,"overall_conversion_rate":2.47},
+  {"brand":"lenovo","views":1700000,"carts":187000,"purchases":58000,"removes":31000,"unique_users":780000,"revenue":14000000.0,"avg_purchase_price":241.0,"avg_price":200.0,"view_to_cart_rate":11.0,"cart_to_purchase_rate":31.02,"overall_conversion_rate":3.41},
+  {"brand":"acer","views":1200000,"carts":132000,"purchases":40000,"removes":22000,"unique_users":550000,"revenue":9600000.0,"avg_purchase_price":240.0,"avg_price":195.0,"view_to_cart_rate":11.0,"cart_to_purchase_rate":30.3,"overall_conversion_rate":3.33},
+  {"brand":"hp","views":1100000,"carts":121000,"purchases":37000,"removes":20000,"unique_users":510000,"revenue":11000000.0,"avg_purchase_price":297.0,"avg_price":230.0,"view_to_cart_rate":11.0,"cart_to_purchase_rate":30.58,"overall_conversion_rate":3.36}
+]

@@ -1,0 +1,34 @@
+{
+  "event_based": {
+    "views": 95248836,
+    "carts": 9096904,
+    "purchases": 2618963,
+    "view_to_cart_rate": 9.5503,
+    "cart_to_purchase_rate": 28.7900,
+    "overall_conversion": 2.7501
+  },
+  "user_based": {
+    "users_viewed": 4100000,
+    "users_carted": 1250000,
+    "users_purchased": 760000,
+    "view_to_cart_rate": 30.49,
+    "cart_to_purchase_rate": 60.80,
+    "overall_conversion": 18.54
+  },
+  "session_based": {
+    "sessions_viewed": 9000000,
+    "sessions_carted": 2100000,
+    "sessions_purchased": 1100000,
+    "view_to_cart_rate": 23.33,
+    "cart_to_purchase_rate": 52.38,
+    "overall_conversion": 12.22
+  },
+  "cart_abandonment": {
+    "total_sessions": 9392732,
+    "sessions_with_cart": 2100000,
+    "cart_to_purchase": 560000,
+    "cart_then_removed": 380000,
+    "cart_abandoned_no_action": 1160000,
+    "abandonment_rate": 73.33
+  }
+}

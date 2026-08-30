@@ -1,0 +1,18 @@
+{
+  "cohort_data": [
+    {"cohort_month":"2019-10-01","active_month":"2019-10-01","active_users":2800000,"purchasing_users":620000,"period_offset":0},
+    {"cohort_month":"2019-10-01","active_month":"2019-11-01","active_users":1260000,"purchasing_users":290000,"period_offset":1},
+    {"cohort_month":"2019-11-01","active_month":"2019-11-01","active_users":2100000,"purchasing_users":480000,"period_offset":0}
+  ],
+  "repeat_purchase_distribution": [
+    {"purchase_count":1,"users":520000,"pct":68.4},
+    {"purchase_count":2,"users":140000,"pct":18.4},
+    {"purchase_count":3,"users":52000,"pct":6.8},
+    {"purchase_count":4,"users":22000,"pct":2.9},
+    {"purchase_count":5,"users":12000,"pct":1.6},
+    {"purchase_count":6,"users":6000,"pct":0.79},
+    {"purchase_count":7,"users":3200,"pct":0.42},
+    {"purchase_count":8,"users":1800,"pct":0.24}
+  ],
+  "limitation_note": "Dataset covers only Oct-Nov 2019. Cohort analysis shows 2 months only."
+}

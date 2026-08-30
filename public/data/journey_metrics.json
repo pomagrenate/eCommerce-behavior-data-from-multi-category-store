@@ -1,0 +1,30 @@
+{
+  "transitions": [
+    {"from_event":"view","to_event":"view","transitions":72000000},
+    {"from_event":"view","to_event":"cart","transitions":7800000},
+    {"from_event":"cart","to_event":"view","transitions":3200000},
+    {"from_event":"cart","to_event":"purchase","transitions":2100000},
+    {"from_event":"cart","to_event":"remove_from_cart","transitions":1800000},
+    {"from_event":"remove_from_cart","to_event":"view","transitions":980000},
+    {"from_event":"purchase","to_event":"view","transitions":620000},
+    {"from_event":"view","to_event":"purchase","transitions":180000}
+  ],
+  "session_types": [
+    {"journey_type":"view-only","sessions":5800000,"avg_events":3.2,"avg_views":3.2,"avg_carts":0.0},
+    {"journey_type":"view-cart-abandoned","sessions":1540000,"avg_events":5.8,"avg_views":3.4,"avg_carts":1.4},
+    {"journey_type":"view-cart-purchase","sessions":980000,"avg_events":7.2,"avg_views":3.8,"avg_carts":1.6},
+    {"journey_type":"view-cart-remove","sessions":420000,"avg_events":6.1,"avg_views":3.2,"avg_carts":1.2}
+  ],
+  "top_sequences": [
+    {"sequence":"view","frequency":3200000,"conversions":0,"conversion_pct":0.0},
+    {"sequence":"view->view","frequency":2100000,"conversions":0,"conversion_pct":0.0},
+    {"sequence":"view->view->view","frequency":1400000,"conversions":0,"conversion_pct":0.0},
+    {"sequence":"view->cart","frequency":980000,"conversions":0,"conversion_pct":0.0},
+    {"sequence":"view->view->cart","frequency":720000,"conversions":0,"conversion_pct":0.0},
+    {"sequence":"view->cart->purchase","frequency":520000,"conversions":520000,"conversion_pct":100.0},
+    {"sequence":"view->view->cart->purchase","frequency":380000,"conversions":380000,"conversion_pct":100.0},
+    {"sequence":"view->cart->view","frequency":310000,"conversions":0,"conversion_pct":0.0},
+    {"sequence":"view->cart->remove_from_cart","frequency":290000,"conversions":0,"conversion_pct":0.0},
+    {"sequence":"view->view->view->view","frequency":260000,"conversions":0,"conversion_pct":0.0}
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "total_events": 109949743,
+  "unique_users": 4169165,
+  "unique_sessions": 9392732,
+  "unique_products": 453526,
+  "unique_brands": 3920,
+  "total_views": 95248836,
+  "total_carts": 9096904,
+  "total_removes": 2985039,
+  "total_purchases": 2618963,
+  "total_revenue": 432000000.0,
+  "sessions_with_cart": 7132492,
+  "sessions_cart_purchased": 1893421,
+  "event_conversion_rate": 2.7501,
+  "cart_abandonment_rate": 73.44,
+  "processing_note": "~110M events processed offline via DuckDB"
+}

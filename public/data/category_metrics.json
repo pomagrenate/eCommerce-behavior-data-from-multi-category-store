@@ -1,0 +1,9 @@
+[
+  {"top_category":"electronics","category_code":"electronics.smartphone","views":18000000,"carts":1980000,"purchases":594000,"removes":310000,"unique_users":7200000,"revenue":180000000.0,"avg_price":320.0,"conversion_rate":3.3,"view_to_cart_rate":11.0},
+  {"top_category":"electronics","category_code":"electronics.clocks","views":9000000,"carts":810000,"purchases":216000,"removes":120000,"unique_users":3800000,"revenue":32000000.0,"avg_price":148.0,"conversion_rate":2.4,"view_to_cart_rate":9.0},
+  {"top_category":"electronics","category_code":"electronics.video.tv","views":7200000,"carts":576000,"purchases":144000,"removes":88000,"unique_users":3100000,"revenue":54000000.0,"avg_price":375.0,"conversion_rate":2.0,"view_to_cart_rate":8.0},
+  {"top_category":"computers","category_code":"computers.notebook","views":6800000,"carts":748000,"purchases":224000,"removes":115000,"unique_users":2900000,"revenue":55000000.0,"avg_price":245.0,"conversion_rate":3.3,"view_to_cart_rate":11.0},
+  {"top_category":"appliances","category_code":"appliances.kitchen.refrigerators","views":3200000,"carts":288000,"purchases":72000,"removes":42000,"unique_users":1400000,"revenue":28000000.0,"avg_price":388.0,"conversion_rate":2.25,"view_to_cart_rate":9.0},
+  {"top_category":"appliances","category_code":"appliances.environment.water_heater","views":2100000,"carts":168000,"purchases":40000,"removes":26000,"unique_users":920000,"revenue":5200000.0,"avg_price":130.0,"conversion_rate":1.9,"view_to_cart_rate":8.0},
+  {"top_category":"furniture","category_code":"furniture.living_room.sofa","views":1800000,"carts":126000,"purchases":29000,"removes":21000,"unique_users":800000,"revenue":14000000.0,"avg_price":482.0,"conversion_rate":1.61,"view_to_cart_rate":7.0}
+]
