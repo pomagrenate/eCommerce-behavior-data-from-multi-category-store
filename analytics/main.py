@@ -35,7 +35,6 @@ def find_dataset_files(data_dir: Path, files_arg: list[str]) -> list[str]:
     
     if files_arg:
         for f_pat in files_arg:
-            # Check if direct file path or relative to data_dir or glob
             p = Path(f_pat)
             if p.is_file():
                 found_files.append(str(p.resolve()))
@@ -48,20 +47,25 @@ def find_dataset_files(data_dir: Path, files_arg: list[str]) -> list[str]:
                     matches = glob.glob(str(data_dir / f_pat)) + glob.glob(f_pat)
                     found_files.extend([str(Path(m).resolve()) for m in matches if Path(m).is_file()])
     else:
-        # Default search: look for 2019-Oct.csv, 2019-Nov.csv or any *.csv in data_dir
-        default_candidates = ["2019-Oct.csv", "2019-Nov.csv"]
-        for c in default_candidates:
-            p = data_dir / c
-            if p.is_file():
-                found_files.append(str(p.resolve()))
-                
-        if not found_files:
-            # Fallback: search for all *.csv files in data_dir
-            found_files = [str(p.resolve()) for p in data_dir.glob("*.csv")]
+        # Check if data_dir is itself a direct CSV file path
+        if data_dir.is_file():
+            found_files.append(str(data_dir.resolve()))
+        elif data_dir.is_dir():
+            # Search for 2019-Oct.csv, 2019-Nov.csv or any *.csv in data_dir
+            default_candidates = ["2019-Oct.csv", "2019-Nov.csv"]
+            for c in default_candidates:
+                p = data_dir / c
+                if p.is_file():
+                    found_files.append(str(p.resolve()))
+                    
+            if not found_files:
+                # Fallback: search for all *.csv files in data_dir
+                found_files = [str(p.resolve()) for p in data_dir.glob("*.csv")]
 
     # Deduplicate while preserving order
     unique_files = list(dict.fromkeys(found_files))
     return unique_files
+
 
 
 def main():
