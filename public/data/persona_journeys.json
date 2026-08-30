@@ -1,0 +1,35 @@
+{
+  "window_shopper": [
+    {"sequence": ["VIEW", "VIEW", "VIEW", "EXIT"], "frequency": 1824000, "share_pct": 50.8, "outcome": "EXIT"},
+    {"sequence": ["VIEW", "VIEW", "VIEW", "VIEW", "EXIT"], "frequency": 892000, "share_pct": 24.8, "outcome": "EXIT"},
+    {"sequence": ["VIEW", "EXIT"], "frequency": 512000, "share_pct": 14.2, "outcome": "EXIT"},
+    {"sequence": ["VIEW", "VIEW", "EXIT"], "frequency": 356210, "share_pct": 9.9, "outcome": "EXIT"}
+  ],
+  "intent_shopper": [
+    {"sequence": ["VIEW", "VIEW", "CART", "PURCHASE"], "frequency": 210400, "share_pct": 41.0, "outcome": "PURCHASE"},
+    {"sequence": ["VIEW", "CART", "PURCHASE"], "frequency": 142000, "share_pct": 27.7, "outcome": "PURCHASE"},
+    {"sequence": ["VIEW", "CART", "VIEW", "PURCHASE"], "frequency": 88000, "share_pct": 17.1, "outcome": "PURCHASE"},
+    {"sequence": ["VIEW", "CART", "EXIT"], "frequency": 72000, "share_pct": 14.0, "outcome": "EXIT"}
+  ],
+  "hesitant_buyer": [
+    {"sequence": ["VIEW", "CART", "REMOVE", "VIEW", "EXIT"], "frequency": 284000, "share_pct": 41.5, "outcome": "EXIT"},
+    {"sequence": ["VIEW", "VIEW", "CART", "REMOVE", "EXIT"], "frequency": 192000, "share_pct": 28.0, "outcome": "EXIT"},
+    {"sequence": ["VIEW", "CART", "REMOVE", "CART", "PURCHASE"], "frequency": 112000, "share_pct": 16.3, "outcome": "PURCHASE"},
+    {"sequence": ["VIEW", "CART", "EXIT"], "frequency": 96120, "share_pct": 14.0, "outcome": "EXIT"}
+  ],
+  "focused_buyer": [
+    {"sequence": ["VIEW", "CART", "PURCHASE"], "frequency": 184000, "share_pct": 61.6, "outcome": "PURCHASE"},
+    {"sequence": ["VIEW", "PURCHASE"], "frequency": 68000, "share_pct": 22.7, "outcome": "PURCHASE"},
+    {"sequence": ["VIEW", "VIEW", "CART", "PURCHASE"], "frequency": 46400, "share_pct": 15.5, "outcome": "PURCHASE"}
+  ],
+  "explorer": [
+    {"sequence": ["VIEW", "VIEW", "VIEW", "VIEW", "VIEW", "EXIT"], "frequency": 142000, "share_pct": 45.4, "outcome": "EXIT"},
+    {"sequence": ["VIEW", "VIEW", "CART", "REMOVE", "EXIT"], "frequency": 88000, "share_pct": 28.1, "outcome": "EXIT"},
+    {"sequence": ["VIEW", "VIEW", "CART", "PURCHASE"], "frequency": 82500, "share_pct": 26.4, "outcome": "PURCHASE"}
+  ],
+  "heavy_browser": [
+    {"sequence": ["VIEW", "VIEW", "VIEW", "VIEW", "EXIT"], "frequency": 98000, "share_pct": 51.0, "outcome": "EXIT"},
+    {"sequence": ["VIEW", "CART", "REMOVE", "VIEW", "EXIT"], "frequency": 54000, "share_pct": 28.1, "outcome": "EXIT"},
+    {"sequence": ["VIEW", "VIEW", "CART", "PURCHASE"], "frequency": 40100, "share_pct": 20.8, "outcome": "PURCHASE"}
+  ]
+}

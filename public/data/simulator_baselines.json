@@ -1,0 +1,19 @@
+{
+  "population": {
+    "total_sessions": 27821040,
+    "total_carts": 2845981,
+    "total_purchases": 1158284,
+    "total_removes": 1436612,
+    "baseline_conversion_rate": 4.16,
+    "observed_purchase_value_proxy": 112600000,
+    "avg_purchase_value": 97.21
+  },
+  "personas": {
+    "window_shopper": { "sessions": 3584210, "carts": 0, "purchases": 0, "removes": 0, "conversion": 0.0, "value": 0 },
+    "intent_shopper": { "sessions": 512400, "carts": 435540, "purchases": 254350, "removes": 35710, "conversion": 49.6, "value": 48200000 },
+    "hesitant_buyer": { "sessions": 684120, "carts": 437836, "purchases": 79686, "removes": 204907, "conversion": 11.6, "value": 19400000 },
+    "focused_buyer": { "sessions": 298400, "carts": 233348, "purchases": 182478, "removes": 4900, "conversion": 61.1, "value": 26800000 },
+    "explorer": { "sessions": 312500, "carts": 34375, "purchases": 7562, "removes": 12031, "conversion": 2.4, "value": 8900000 },
+    "heavy_browser": { "sessions": 192100, "carts": 29583, "purchases": 4289, "removes": 12454, "conversion": 2.2, "value": 8800000 }
+  }
+}

@@ -7,8 +7,10 @@ import type {
   OverviewMetrics, DailyMetric, HourlyMetric, FunnelMetrics,
   BrandMetric, CategoryMetric, ProductMetric, JourneyMetrics, RetentionMetrics,
   BrandJourneyMetricsData, CustomerSegment, PricingMetric, ParetoMetrics,
-  CrossSellData, OpportunityItem, ExperimentSpec, NextDataStrategyField, CeoFinding
+  CrossSellData, OpportunityItem, ExperimentSpec, NextDataStrategyField, CeoFinding,
+  DataDerivedPersona, PersonaJourneyItem, MarkovMatrixMap, SimulatorBaselineData
 } from './types';
+
 
 function readData<T>(filename: string): T {
   const filePath = path.join(process.cwd(), 'public', 'data', filename);
@@ -96,7 +98,23 @@ export function getCeoFindings(): CeoFinding[] {
 
 
 // Format utilities
-export function fmt(n: number, decimals = 0): string {
+export function getPersonas(): DataDerivedPersona[] {
+  return readData<DataDerivedPersona[]>('personas.json');
+}
+
+export function getPersonaJourneys(): Record<string, PersonaJourneyItem[]> {
+  return readData<Record<string, PersonaJourneyItem[]>>('persona_journeys.json');
+}
+
+export function getMarkovTransitions(): MarkovMatrixMap {
+  return readData<MarkovMatrixMap>('markov_transitions.json');
+}
+
+export function getSimulatorBaselines(): SimulatorBaselineData {
+  return readData<SimulatorBaselineData>('simulator_baselines.json');
+}
+
+export function fmt(n: number | undefined | null, decimals = 0): string {
   if (n === undefined || n === null) return '—';
   return n.toLocaleString('en-US', { minimumFractionDigits: decimals, maximumFractionDigits: decimals });
 }

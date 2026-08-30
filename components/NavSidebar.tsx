@@ -9,10 +9,12 @@ const NAV_GROUPS = [
     title: "Executive",
     items: [
       { href: "/",             label: "CEO Dashboard", icon: "⬡" },
+      { href: "/simulator",    label: "CEO Simulator", icon: "🕹️" },
       { href: "/opportunities",label: "Opportunities", icon: "⚡" },
       { href: "/experiments",  label: "Experiments",   icon: "🧪" },
     ]
   },
+
   {
     title: "Behavior & Funnel",
     items: [

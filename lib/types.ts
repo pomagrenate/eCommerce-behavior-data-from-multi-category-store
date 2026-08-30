@@ -283,4 +283,61 @@ export interface CeoFinding {
   validation: string;
 }
 
+export interface DataDerivedPersona {
+  [key: string]: unknown;
+  persona_id: string;
+  name: string;
+  description: string;
+  population_count: number;
+  population_share: number;
+  median_views: number;
+  median_carts: number;
+  median_removes: number;
+  median_session_depth: number;
+  median_events_before_cart: number;
+  median_events_before_purchase: number;
+  median_session_duration_sec: number;
+  view_to_cart_rate: number;
+  cart_to_purchase_rate: number;
+  cart_removal_rate: number;
+  overall_conversion_rate: number;
+  observed_purchase_value_proxy: number;
+  category_breadth: number;
+  brand_breadth: number;
+  primary_friction: string;
+  confidence: string;
+  sample_size: number;
+}
+
+export interface PersonaJourneyItem {
+  sequence: string[];
+  frequency: number;
+  share_pct: number;
+  outcome: "PURCHASE" | "EXIT" | "CART";
+}
+
+export type MarkovMatrixState = Record<string, number & { source_count?: number }>;
+export type MarkovMatrixMap = Record<string, Record<string, Record<string, number>>>;
+
+export interface SimulatorBaselineData {
+  population: {
+    total_sessions: number;
+    total_carts: number;
+    total_purchases: number;
+    total_removes: number;
+    baseline_conversion_rate: number;
+    observed_purchase_value_proxy: number;
+    avg_purchase_value: number;
+  };
+  personas: Record<string, {
+    sessions: number;
+    carts: number;
+    purchases: number;
+    removes: number;
+    conversion: number;
+    value: number;
+  }>;
+}
+
+
 

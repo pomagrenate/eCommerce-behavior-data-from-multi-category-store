@@ -1,0 +1,51 @@
+{
+  "all_customers": {
+    "VIEW":     {"VIEW": 0.6210, "CART": 0.1842, "REMOVE": 0.0000, "PURCHASE": 0.0000, "EXIT": 0.1948, "source_count": 87378691},
+    "CART":     {"VIEW": 0.2010, "CART": 0.2015, "REMOVE": 0.2185, "PURCHASE": 0.3090, "EXIT": 0.0700, "source_count": 14229908},
+    "REMOVE":   {"VIEW": 0.3540, "CART": 0.1020, "REMOVE": 0.0480, "PURCHASE": 0.0460, "EXIT": 0.4500, "source_count": 7183060},
+    "PURCHASE": {"VIEW": 0.0000, "CART": 0.0000, "REMOVE": 0.0000, "PURCHASE": 1.0000, "EXIT": 0.0000, "source_count": 1158284},
+    "EXIT":     {"VIEW": 0.0000, "CART": 0.0000, "REMOVE": 0.0000, "PURCHASE": 0.0000, "EXIT": 1.0000, "source_count": 27821040}
+  },
+  "window_shopper": {
+    "VIEW":     {"VIEW": 0.7250, "CART": 0.0000, "REMOVE": 0.0000, "PURCHASE": 0.0000, "EXIT": 0.2750, "source_count": 21504900},
+    "CART":     {"VIEW": 0.0000, "CART": 0.0000, "REMOVE": 0.0000, "PURCHASE": 0.0000, "EXIT": 1.0000, "source_count": 0},
+    "REMOVE":   {"VIEW": 0.0000, "CART": 0.0000, "REMOVE": 0.0000, "PURCHASE": 0.0000, "EXIT": 1.0000, "source_count": 0},
+    "PURCHASE": {"VIEW": 0.0000, "CART": 0.0000, "REMOVE": 0.0000, "PURCHASE": 1.0000, "EXIT": 0.0000, "source_count": 0},
+    "EXIT":     {"VIEW": 0.0000, "CART": 0.0000, "REMOVE": 0.0000, "PURCHASE": 0.0000, "EXIT": 1.0000, "source_count": 3584210}
+  },
+  "intent_shopper": {
+    "VIEW":     {"VIEW": 0.4210, "CART": 0.4250, "REMOVE": 0.0000, "PURCHASE": 0.0000, "EXIT": 0.1540, "source_count": 2049600},
+    "CART":     {"VIEW": 0.1020, "CART": 0.2320, "REMOVE": 0.0820, "PURCHASE": 0.5840, "EXIT": 0.0000, "source_count": 1024800},
+    "REMOVE":   {"VIEW": 0.4100, "CART": 0.2000, "REMOVE": 0.0500, "PURCHASE": 0.1400, "EXIT": 0.2000, "source_count": 84033},
+    "PURCHASE": {"VIEW": 0.0000, "CART": 0.0000, "REMOVE": 0.0000, "PURCHASE": 1.0000, "EXIT": 0.0000, "source_count": 598483},
+    "EXIT":     {"VIEW": 0.0000, "CART": 0.0000, "REMOVE": 0.0000, "PURCHASE": 0.0000, "EXIT": 1.0000, "source_count": 315683}
+  },
+  "hesitant_buyer": {
+    "VIEW":     {"VIEW": 0.6200, "CART": 0.2140, "REMOVE": 0.0000, "PURCHASE": 0.0000, "EXIT": 0.1660, "source_count": 9577680},
+    "CART":     {"VIEW": 0.2400, "CART": 0.1100, "REMOVE": 0.4680, "PURCHASE": 0.1820, "EXIT": 0.0000, "source_count": 2052360},
+    "REMOVE":   {"VIEW": 0.4200, "CART": 0.1200, "REMOVE": 0.0600, "PURCHASE": 0.0500, "EXIT": 0.3500, "source_count": 960504},
+    "PURCHASE": {"VIEW": 0.0000, "CART": 0.0000, "REMOVE": 0.0000, "PURCHASE": 1.0000, "EXIT": 0.0000, "source_count": 373530},
+    "EXIT":     {"VIEW": 0.0000, "CART": 0.0000, "REMOVE": 0.0000, "PURCHASE": 0.0000, "EXIT": 1.0000, "source_count": 1590750}
+  },
+  "focused_buyer": {
+    "VIEW":     {"VIEW": 0.3800, "CART": 0.5000, "REMOVE": 0.0000, "PURCHASE": 0.0000, "EXIT": 0.1200, "source_count": 596800},
+    "CART":     {"VIEW": 0.0500, "CART": 0.1470, "REMOVE": 0.0210, "PURCHASE": 0.7820, "EXIT": 0.0000, "source_count": 298400},
+    "REMOVE":   {"VIEW": 0.5000, "CART": 0.2000, "REMOVE": 0.0500, "PURCHASE": 0.1000, "EXIT": 0.1500, "source_count": 6266},
+    "PURCHASE": {"VIEW": 0.0000, "CART": 0.0000, "REMOVE": 0.0000, "PURCHASE": 1.0000, "EXIT": 0.0000, "source_count": 233348},
+    "EXIT":     {"VIEW": 0.0000, "CART": 0.0000, "REMOVE": 0.0000, "PURCHASE": 0.0000, "EXIT": 1.0000, "source_count": 65052}
+  },
+  "explorer": {
+    "VIEW":     {"VIEW": 0.7800, "CART": 0.0550, "REMOVE": 0.0000, "PURCHASE": 0.0000, "EXIT": 0.1650, "source_count": 5625000},
+    "CART":     {"VIEW": 0.3200, "CART": 0.1100, "REMOVE": 0.3500, "PURCHASE": 0.2200, "EXIT": 0.0000, "source_count": 309375},
+    "REMOVE":   {"VIEW": 0.4500, "CART": 0.1000, "REMOVE": 0.0500, "PURCHASE": 0.0500, "EXIT": 0.3500, "source_count": 108281},
+    "PURCHASE": {"VIEW": 0.0000, "CART": 0.0000, "REMOVE": 0.0000, "PURCHASE": 1.0000, "EXIT": 0.0000, "source_count": 68062},
+    "EXIT":     {"VIEW": 0.0000, "CART": 0.0000, "REMOVE": 0.0000, "PURCHASE": 0.0000, "EXIT": 1.0000, "source_count": 928125}
+  },
+  "heavy_browser": {
+    "VIEW":     {"VIEW": 0.8100, "CART": 0.0770, "REMOVE": 0.0000, "PURCHASE": 0.0000, "EXIT": 0.1130, "source_count": 4994600},
+    "CART":     {"VIEW": 0.3340, "CART": 0.1000, "REMOVE": 0.4210, "PURCHASE": 0.1450, "EXIT": 0.0000, "source_count": 384584},
+    "REMOVE":   {"VIEW": 0.4000, "CART": 0.0800, "REMOVE": 0.0700, "PURCHASE": 0.0500, "EXIT": 0.4000, "source_count": 161910},
+    "PURCHASE": {"VIEW": 0.0000, "CART": 0.0000, "REMOVE": 0.0000, "PURCHASE": 1.0000, "EXIT": 0.0000, "source_count": 55764},
+    "EXIT":     {"VIEW": 0.0000, "CART": 0.0000, "REMOVE": 0.0000, "PURCHASE": 0.0000, "EXIT": 1.0000, "source_count": 564176}
+  }
+}

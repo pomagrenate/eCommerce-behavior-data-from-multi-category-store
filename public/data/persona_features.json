@@ -1,0 +1,38 @@
+{
+  "window_shopper": {
+    "views_per_session": {"p25": 2, "median": 6, "p75": 11, "mean": 7.2},
+    "cart_rate": 0.0,
+    "remove_rate": 0.0,
+    "purchase_rate": 0.0
+  },
+  "intent_shopper": {
+    "views_per_session": {"p25": 2, "median": 4, "p75": 8, "mean": 5.1},
+    "cart_rate": 0.425,
+    "remove_rate": 0.082,
+    "purchase_rate": 0.584
+  },
+  "hesitant_buyer": {
+    "views_per_session": {"p25": 8, "median": 14, "p75": 22, "mean": 15.6},
+    "cart_rate": 0.214,
+    "remove_rate": 0.468,
+    "purchase_rate": 0.182
+  },
+  "focused_buyer": {
+    "views_per_session": {"p25": 1, "median": 2, "p75": 3, "mean": 2.1},
+    "cart_rate": 0.500,
+    "remove_rate": 0.021,
+    "purchase_rate": 0.782
+  },
+  "explorer": {
+    "views_per_session": {"p25": 11, "median": 18, "p75": 28, "mean": 19.4},
+    "cart_rate": 0.055,
+    "remove_rate": 0.350,
+    "purchase_rate": 0.220
+  },
+  "heavy_browser": {
+    "views_per_session": {"p25": 16, "median": 26, "p75": 38, "mean": 28.1},
+    "cart_rate": 0.077,
+    "remove_rate": 0.421,
+    "purchase_rate": 0.145
+  }
+}
